@@ -2,6 +2,10 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+<script>
+/* day = light (7:00–19:59), night = dark, by the visitor's own clock; rechecked every minute */
+(function dayTheme(){var h=new Date().getHours();document.documentElement.setAttribute("data-theme",h>=7&&h<20?"light":"dark");setTimeout(dayTheme,60000-Date.now()%60000);})();
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Биография Стива Джобса: главы жизни, хроника и интересные факты.">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
